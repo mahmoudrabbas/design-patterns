@@ -1,4 +1,4 @@
-package FactoryDesignPattern;
+package patterns.creational.Factory;
 
 public class ShapeFactory {
 

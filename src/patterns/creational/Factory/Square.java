@@ -1,8 +1,4 @@
-package FactoryDesignPattern;
+package patterns.creational.Factory;
 
-public class Square implements Shape{
-    @Override
-    public void draw() {
-        System.out.println("Draw A Square");
-    }
+public class Square {
 }
