@@ -5,5 +5,14 @@ public class Main {
         SingletonObject singletonObject = SingletonObject.getInstance();
 
         System.out.println(singletonObject.getMessage());
+
+
+
+        SingletonObject s = SingletonObject.getInstance();
+
+        System.out.println(singletonObject);
+        System.out.println(s);
+
+        System.out.println(s == singletonObject);
     }
 }
