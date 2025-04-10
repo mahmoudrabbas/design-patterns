@@ -1,18 +1,32 @@
-package patterns.creational.Factory;
+package patterns.creational.abstractFactory;
 
 public class Main {
     public static void main(String[] args) {
-        ShapeFactory factory = new ShapeFactory();
+        AbstractFactory absFactory = FactoryProducer.getFactory(true);
 
-        Shape circle = factory.getShape("circle");
-        circle.draw();
+        Shape rs = absFactory.getShape("Square");
 
-        Shape rectangle = factory.getShape("rectangle");
-        rectangle.draw();
+        rs.draw();
 
-        Shape square = factory.getShape("square");
-        square.draw();
+        Shape rc = absFactory.getShape("circle");
+
+        rc.draw();
 
 
+        Shape rr = absFactory.getShape("rectangle");
+        rr.draw();
+
+        AbstractFactory absFactoryNormal = FactoryProducer.getFactory(false);
+        Shape ns = absFactoryNormal.getShape("Square");
+
+        ns.draw();
+
+        Shape nc = absFactoryNormal.getShape("circle");
+
+        nc.draw();
+
+
+        Shape nr = absFactoryNormal.getShape("rectangle");
+        nr.draw();
     }
 }

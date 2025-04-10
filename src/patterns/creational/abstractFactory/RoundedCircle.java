@@ -1,8 +1,8 @@
 package patterns.creational.abstractFactory;
 
-public class Circle implements Shape {
+public class RoundedCircle implements Shape {
     @Override
     public void draw() {
-        System.out.println("Drawing a circle");
+        System.out.println("Drawing a Rounded circle");
     }
 }

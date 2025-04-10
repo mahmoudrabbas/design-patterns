@@ -1,6 +1,7 @@
-package patterns.creational.Factory;
+package patterns.creational.abstractFactory;
 
-public class Square implements Shape{
+
+public class Square implements Shape {
     @Override
     public void draw() {
         System.out.println("Drawing a Square");

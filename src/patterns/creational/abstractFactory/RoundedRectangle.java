@@ -1,8 +1,8 @@
 package patterns.creational.abstractFactory;
 
-public class Rectangle implements Shape {
+public class RoundedRectangle implements Shape {
     @Override
     public void draw() {
-        System.out.println("Drawing a Rectangle");
+        System.out.println("Drawing a Rounded Rectangle");
     }
 }
