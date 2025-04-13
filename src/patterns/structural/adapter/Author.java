@@ -1,4 +1,4 @@
-package patterns.creational.adapter;
+package patterns.structural.adapter;
 
 public class Author {
     private String name;
